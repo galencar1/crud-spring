@@ -6,6 +6,8 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import lombok.Data;
 
 @Data // Realiza os getters e Setters
@@ -17,6 +19,7 @@ public class Course {
 
     @Id // Indica que é chave primária
     @GeneratedValue(strategy = GenerationType.AUTO) //  gera automaticamente o ID no banco de dados.
+    @JsonProperty("_id")
     private Long id;
 
     @Column(length = 200, nullable = false) // Indica que são outras colunas = Não são chave primária
