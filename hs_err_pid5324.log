@@ -1,0 +1,59 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  EXCEPTION_IN_PAGE_ERROR (0xc0000006) at pc=0x00007fffb86d269e, pid=5324, tid=3096
+#
+# JRE version: OpenJDK Runtime Environment Temurin-17.0.2+8 (17.0.2+8) (build 17.0.2+8)
+# Java VM: OpenJDK 64-Bit Server VM Temurin-17.0.2+8 (17.0.2+8, mixed mode, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# Problematic frame:
+# V  [jvm.dll+0x2a269e]
+#
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   https://github.com/adoptium/adoptium-support/issues
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Xdebug -Xnoagent -Djava.compiler=NONE -Xrunjdwp:transport=dt_socket,address=localhost:51557,server=n,suspend=y -XX:+ShowCodeDetailsInExceptionMessages -Dfile.encoding=UTF-8 com.gabriel.CrudSpringApplication
+
+Host: Intel(R) Core(TM) i5-5200U CPU @ 2.20GHz, 4 cores, 7G,  Windows 10 , 64 bit Build 19041 (10.0.19041.1706)
+Time: Tue May 17 10:20:13 2022 Hora oficial do Brasil elapsed time: 2589.539742 seconds (0d 0h 43m 9s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001a3ffbb5460):  JavaThread "C1 CompilerThread0" daemon [_thread_in_vm, id=3096, stack(0x00000045f2800000,0x00000045f2900000)]
+
+
+Current CompileTask:
+C1:2589540 4980       3       org.apache.catalina.core.ContainerBase$ContainerBackgroundProcessor::run (9 bytes)
+
+Stack: [0x00000045f2800000,0x00000045f2900000],  sp=0x00000045f28fe600,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x2a269e]
+V  [jvm.dll+0x7a7843]
+V  [jvm.dll+0x1c36b9]
+V  [jvm.dll+0x1c3557]
+V  [jvm.dll+0x1c3158]
+V  [jvm.dll+0x1c2f90]
+V  [jvm.dll+0x1c5718]
+V  [jvm.dll+0x1c2e2a]
+V  [jvm.dll+0x1c2d28]
+V  [jvm.dll+0x1d7e31]
+V  [jvm.dll+0x138bea]
+V  [jvm.dll+0x140255]
+V  [jvm.dll+0x13e544]
+V  [jvm.dll+0x13851f]
+V  [jvm.dll+0x147fe6]
+V  [jvm.dll+0x133c30]
+V  [jvm.dll+0x133f90]
+V  [jvm.dll+0x134256]
+V  [jvm.dll+0x1336ea]
+V  [jvm.dll+0x1353b1]
+V  [jvm.dll+0x226ef8]
+V  [jvm.dll+0x22503c]
+V  [jvm.dll+0x7e596b]
+V  [jvm.dll+0x7dff2a]
+V  [jvm.dll+0x6744d5]
+C  [ucrtbase.dll+0x21bb2]
